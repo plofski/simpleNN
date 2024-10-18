@@ -246,7 +246,7 @@ if __name__ == "__main__":
     mlp1.fit(40_000, training_inputs, training_targets)
 
     errors = []
-
+    # calculating MSE
     for input, target in zip(training_inputs, training_targets):
         predicted_output = mlp1.forward_pass(input)[1]
 
